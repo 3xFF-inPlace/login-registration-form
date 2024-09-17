@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-center w-100 h-100">
+        <section>
+            <form action="connexion.php" method="POST"> <!-- Action corrigée pour aller au script PHP -->
+                <h1>Connexion:</h1>
+                <p>Adresse Mail:</p>
+                <input type="email" name="email" placeholder="Inscris ton Adresse Mail" required>
+                <p>Mot de passe:</p>
+                <input type="password" name="mdp" placeholder="Inscris ton Mot de passe" required>
+                <button type="submit">Connexion</button>
+                <p class="account">Vous n'avez pas de compte ?</p>
+                <a href="inscription.html">Inscription</a> <!-- Lien simple pour inscription -->
+            </form>
+        </section>
+    </div>
+</body>
+</html>
